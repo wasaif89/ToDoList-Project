@@ -47,7 +47,7 @@ struct List {
             print("can't found item")
         }
     }
-    // function for (updet Or change for List Or Task)
+    
     mutating func changesList (changes : TaskItem, itemIndex: Int){
         if (self.items.count > itemIndex) {
             self.items[itemIndex] = changes
@@ -58,30 +58,30 @@ struct List {
 }
 
 class ToDoList {
-    var wasaifList: [List]
+    var Listes: [List]
     
     init() {
-        wasaifList = []
+        Listes = []
     }
     
-    init(wasaifList: List) {
-        self.wasaifList = [wasaifList]
+    init(Listes: List) {
+        self.Listes = [Listes]
     }
     // function for delet All List
     func removeAll() {
-        self.wasaifList.removeAll()
+        self.Listes.removeAll()
     }
     
     // function for add new List
     func addList (added : List ){
-        self.wasaifList.append(added)
+        self.Listes.append(added)
         
     }
     
     
     //function for (reading) Tasks
     func Tasks() {
-        for item in wasaifList {
+        for item in Listes {
             print(item.listTitle)
             
             for task in item.items {
@@ -110,9 +110,10 @@ var myList2 = List(listTitle: "MyList2", items: [task7,task8])
 var newTask = ToDoList()
 newTask.addList(added: myList)
 newTask.addList(added: myList2)
-newTask.wasaifList[0].deleteItem(itemIndex: 9999)
-newTask.wasaifList[0].changesList(changes: task6, itemIndex: 90)
+newTask.Listes[0].deleteItem(itemIndex: 9999)
+newTask.Listes[1].changesList(changes: task6, itemIndex:0)
 newTask.Tasks()
+
 
 
 
