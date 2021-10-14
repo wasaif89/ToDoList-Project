@@ -6,6 +6,5 @@
 
 ##Usage: I used enum ,stract,class and functions. A simple diagram list with time to keep the user up-to-date with the goals they aim to complete by the day.
 
-##Known issues: I had some of the functions were not operating and the representative not showing at its correct place but fixed it by informing it with class. And some off to do list were not in order managed to fix it in the end.
 
 ##Upcoming features: I would like to see it performing on a user interface and has more interaction with the user. Where it reminds with notification .
